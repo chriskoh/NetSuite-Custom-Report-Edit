@@ -9,7 +9,7 @@ function recordchange(type, name){
 		var reporturl = 'https://system.na1.netsuite.com/app/reporting/reportrunner.nl?cr=522&customized=T&whence='
 		
 		var win = window.open(reporturl,"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=10, height=10, visible=none");
-	  window.focus(); // focuses the main window.
+	  	window.focus(); // focuses the main window.
 
 		win.onload = function(){
 			win.document.getElementById('crit_1_from').value=nlapiGetFieldValue('datefield');
@@ -29,7 +29,7 @@ function recordchange(type, name){
 		var reporturl = 'https://system.na1.netsuite.com/app/reporting/reportrunner.nl?cr=522&customized=T&whence='
 		
 		var win = window.open(reporturl,"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=10, height=10, visible=none");
-	  window.focus(); // focuses the main window.
+		window.focus(); // focuses the main window.
 
 		win.onload = function(){
 			win.document.getElementById('crit_1_to').value=nlapiGetFieldValue('datefield2');
