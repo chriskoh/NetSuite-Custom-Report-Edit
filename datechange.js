@@ -11,6 +11,7 @@ function recordchange(type, name){
 		var win = window.open(reporturl,"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=10, height=10, visible=none");
 	  	window.focus(); // focuses the main window.
 
+		// Change 'crit_1_from' to your custom field, and change 'datefield' to the report's field that needs to be modified
 		win.onload = function(){
 			win.document.getElementById('crit_1_from').value=nlapiGetFieldValue('datefield');
 			win.document.getElementById("refresh").click();
@@ -31,6 +32,7 @@ function recordchange(type, name){
 		var win = window.open(reporturl,"_blank","toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, width=10, height=10, visible=none");
 		window.focus(); // focuses the main window.
 
+		// Change 'crit_1_to' to your custom field, and change 'datefield2' to the report's field that needs to be modified
 		win.onload = function(){
 			win.document.getElementById('crit_1_to').value=nlapiGetFieldValue('datefield2');
 			win.document.getElementById("refresh").click();
